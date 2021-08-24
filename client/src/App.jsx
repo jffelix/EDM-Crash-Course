@@ -60,7 +60,7 @@ class App extends React.Component {
 
             return (
                 <div>
-                    <h1>EDM genre list!</h1>
+                    <h1>EDM Crash Course!</h1>
                     <i>Does all electronic music really sound the same?</i>
                     <GenreList list={testSeeds} clickGenre={this.clickGenre} />
                 </div>
@@ -70,7 +70,7 @@ class App extends React.Component {
 
             return (
                 <div>
-                    <h1>EDM genre list!</h1>
+                    <h1>EDM Crash Course!</h1>
                     <i>Does all electronic music really sound the same?</i>
                     <GenreList list={this.state.fullGenreList} clickGenre={this.clickGenre} />
                     <p></p>

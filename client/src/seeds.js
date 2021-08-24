@@ -24,6 +24,10 @@ var genreList = [
                 songLink: null
             },
             {
+                subGenreName: 'Tech House',
+                songLink: null
+            },
+            {
                 subGenreName: 'Deep House',
                 songLink: null
             }
@@ -50,15 +54,107 @@ var genreList = [
                 songLink: null
             }
         ]
-    }
-
-    // trap
-    // dubstep
-    // future bass
-    // hard dance
-      // hardstyle
-      // happy hardcore
-    // moombahton
+    },
+    {
+        genreName: 'Future Bass',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Future Bass',
+                songLink: null
+            }
+        ]
+    },
+    {
+        genreName: 'Trap',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Trap',
+                songLink: null
+            }
+        ]
+    },
+    {
+        genreName: 'Moombathon',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Moombahton',
+                songLink: null
+            }
+        ]
+    },
+    {
+        genreName: 'Dubstep',
+        hasSubGenres: true,
+        subGenres: [
+            {
+                subGenreName: 'Dubstep',
+                songLink: null
+            },
+            {
+                subGenreName: 'Riddim',
+                songLink: null
+            },
+            {
+                subGenreName: 'Brostep',
+                songLink: null
+            },
+            {
+                subGenreName: 'Melodic Dubstep',
+                songLink: null
+            },
+            {
+                subGenreName: 'Glitch Hop',
+                songLink: null
+            }
+        ]
+    },
+    {
+        genreName: 'Hard Dance',
+        hasSubGenres: true,
+        subGenres: [
+            {
+                subGenreName: 'Hardstyle',
+                songLink: null
+            },
+            {
+                subGenreName: 'Hardcore',
+                songLink: null
+            },
+            {
+                subGenreName: 'Happy Hardcore',
+                songLink: null
+            }
+        ]
+    },
 ];
 
 module.exports = genreList;
+
+
+// house
+  // progressive
+  // electro
+  // future
+  // deep
+  // big room
+  // tech
+  // bass
+// trap
+    // trap
+    // chill trap
+// moombahton
+// dubstep
+    // dubstep
+    // riddim
+    // brostep
+    // melodic dubstep
+    // glitch hop
+// future bass
+// hard dance
+    // hardstyle
+    // happy hardcore
+// drum and bass
+// synthwave

@@ -5,31 +5,43 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Progressive House',
-                songLink: null
+                // Don't You Worry Child
+                songLink: 'https://open.spotify.com/track/043bfUkTydw0xJ5JjOT91w?si=6dc0dd5b34d34827'
             },
             {
                 subGenreName: 'Electro House',
-                songLink: null
+                // Internet Friends
+                songLink: 'https://open.spotify.com/track/5qFL2uwfnGU8FccwLMgPNQ?si=d3e7e59916344350'
             },
             {
                 subGenreName: 'Big Room House',
-                songLink: null
+                // Rave After Rave
+                songLink: 'https://open.spotify.com/track/2VgAzCIMZXCmbnxI5AbCsi?si=d3d04c0f0e0e418e'
+            },
+            {
+                subGenreName: 'Melbourne Bounce',
+                // Bounce Generation
+                songLink: 'https://open.spotify.com/track/1KfW2MqAiGG01pWm34Y2T6?si=0d79649176d9490c'
             },
             {
                 subGenreName: 'Future House',
-                songLink: null
+                // Gecko (Overdrive)
+                songLink: 'https://open.spotify.com/track/50PPSxXsLw8n4CQrWPopIW?si=d7348d2dd7a84c7c'
             },
             {
                 subGenreName: 'Bass House',
-                songLink: null
+                // HOT DRUM
+                songLink: 'https://open.spotify.com/track/0gcPFlSLjkVqz84RcDhyJk?si=83bb98796c934103'
             },
             {
                 subGenreName: 'Tech House',
-                songLink: null
+                // Make A Cake
+                songLink: 'https://open.spotify.com/track/7bFOkwjxOcGaw6ZULE58Mh?si=c0c15a38b2384744'
             },
             {
                 subGenreName: 'Deep House',
-                songLink: null
+                // Faded
+                songLink: 'https://open.spotify.com/track/2GQEM9JuHu30sGFvRYeCxz?si=8442fb5e22e5420f'
             }
         ]
     },
@@ -39,19 +51,24 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Vocal Trance',
-                songLink: null
+                // Quiet Storm
+                songLink: 'https://open.spotify.com/track/3ycBoUppEy6mvItpEv9DU7?si=1931e08d906f4b59'
             },
             {
+                // 
                 subGenreName: 'Progressive Trance',
-                songLink: null
+                // Sun & Moon
+                songLink: 'https://open.spotify.com/track/4rfhAoZjGwraqwX1w47uij?si=ac34f7ed9f52405e'
             },
             {
                 subGenreName: 'Big Room Trance',
-                songLink: null
+                // Moments (Remix)
+                songLink: 'https://open.spotify.com/track/3XoDdhbSPDw3XFjLwecKuo?si=bfff9209c13e45f7'
             },
             {
                 subGenreName: 'Psytrance',
-                songLink: null
+                // Free Tibet
+                songLink: 'https://open.spotify.com/track/1Ic75bJnvNE3zpE7qZg7aA?si=80cc6454f60b48be'
             }
         ]
     },
@@ -61,6 +78,7 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Future Bass',
+                // You and Me
                 songLink: 'https://open.spotify.com/track/36meE3FrlfHJmc1Yi37JQx?si=bbc79f294c7e4092'
             }
         ]
@@ -71,11 +89,13 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Trap',
-                songLink: null
+                // DJ Turn It Up
+                songLink: 'https://open.spotify.com/track/1ivuWgxFQb2xzxVNSlB1hF?si=d2d624da162c4ce3'
             },
             {
                 subGenreName: 'Chill Trap',
-                songLink: null
+                // You Know You Like It
+                songLink: 'https://open.spotify.com/track/57kR5SniQIbsbVoIjjOUDa?si=bb6a5847a2a745b5'
             }
         ]
     },
@@ -85,7 +105,8 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Moombahton',
-                songLink: null
+                // Bun Up The Dance
+                songLink: 'https://open.spotify.com/track/2JQh3fEZUYYP9fNXC4841f?si=dbbcba3cadcf4cda'
             }
         ]
     },
@@ -95,11 +116,13 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Dubstep',
-                songLink: null
+                // Try It Out (Put Em Up)
+                songLink: 'https://open.spotify.com/track/2Pqs2x5vsYhkGhV8W28vbr?si=be32be9f50c04de8'
             },
             {
                 subGenreName: 'Riddim',
-                songLink: null
+                // Rebel Bass
+                songLink: 'https://open.spotify.com/track/0Es6gCeG90VDzqvz6WHOQV?si=1c5847031df2431d'
             },
             {
                 subGenreName: 'Brostep',
@@ -107,11 +130,13 @@ var genreList = [
             },
             {
                 subGenreName: 'Melodic Dubstep',
-                songLink: null
+                // Worlds Apart
+                songLink: 'https://open.spotify.com/track/57CFIKmALHxvzvMRsK8Kgp?si=11037e09baa745ab'
             },
             {
                 subGenreName: 'Glitch Hop',
-                songLink: null
+                // Ants
+                songLink: 'https://open.spotify.com/track/5Fwq7F2yjF3eQnvkfjN4LY?si=bc16fb9b92b84f0a'
             }
         ]
     },
@@ -121,7 +146,8 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Drum and Bass',
-                songLink: null
+                // We Can Have It All
+                songLink: 'https://open.spotify.com/track/49i84i0hXi62ORzn5TWSFn?si=d142dc30b955490c'
             }
         ]
     },
@@ -131,7 +157,8 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Hardstyle',
-                songLink: null
+                // Digital Nation
+                songLink: 'https://open.spotify.com/track/5YJ1QhgbyHwfLhwW4xttsF?si=c170382a43ff423a'
             },
             {
                 subGenreName: 'Hardcore',
@@ -139,7 +166,8 @@ var genreList = [
             },
             {
                 subGenreName: 'Happy Hardcore',
-                songLink: null
+                // Rest Of Your Life
+                songLink: 'https://open.spotify.com/track/5A75dQjETCrhoaXRjRndC2?si=d8bdbb2a5b6549c2'
             }
         ]
     },
@@ -159,7 +187,8 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Techno',
-                songLink: null
+                // Pursuit
+                songLink: 'https://open.spotify.com/track/2jJIxT6WAIVWzDo3Ou53Q0?si=25c9950ac0644276'
             }
         ]
     },

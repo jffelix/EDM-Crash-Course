@@ -1,4 +1,17 @@
 .main {
-    padding: 40px;
+    padding: 20px;
+    margin: 50px;
     text-align: center;
+    border-style: none;
+    background-color: rgb(252, 251, 206);
+    border-radius: 20px;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+}
+
+.subTitle {
+    font-size: 20px;
+    /* padding: 50px; */
 }

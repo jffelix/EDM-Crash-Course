@@ -61,7 +61,7 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Future Bass',
-                songLink: null
+                songLink: 'https://open.spotify.com/track/36meE3FrlfHJmc1Yi37JQx?si=bbc79f294c7e4092'
             }
         ]
     },
@@ -128,7 +128,7 @@ var genreList = [
                 songLink: null
             }
         ]
-    },
+    }
 ];
 
 module.exports = genreList;

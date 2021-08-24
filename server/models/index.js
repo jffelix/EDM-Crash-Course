@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 const genreList = require('../../client/src/seeds.js');
+// console.log('genreList: ', genreList);
 
 const genreItemSchema = new mongoose.Schema({
-    genreName: String,
-    hasSubGenres: Boolean,
+    genreName: {type: String},
+    hasSubGenres: {type: Boolean},
     subGenres: [
         {
             subGenreName: String,
@@ -14,9 +15,10 @@ const genreItemSchema = new mongoose.Schema({
 
 var genreItem = mongoose.model('Item', genreItemSchema);
 
-genreItemSchema.create(genreList)
+// genreItem as a variable will allow use of it's methods
+genreItem.create(genreList)
     .then((response) => {
-        console.log('response from db: ', response);
+        // console.log('response from db: ', response);
         console.log('Populated collection!');
     })
     .catch((err) => {

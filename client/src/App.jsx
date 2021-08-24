@@ -2,20 +2,40 @@ import React from 'react';
 import testSeeds from './seeds.js';
 import GenreList from './sub-components/GenreList.jsx';
 import SubGenreList from './sub-components/SubGenreList.jsx';
+import axios from 'axios';
 
 class App extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            fullGenreList: testSeeds,
+            fullGenreList: [],
             wasGenreSelected: false,
             selectedGenre: null,
             subGenreList: []
         }
 
+        this.getGenres = this.getGenres.bind(this);
         this.clickGenre = this.clickGenre.bind(this);
         this.showSubGenreList = this.showSubGenreList.bind(this);
+    }
+
+    componentDidMount() {
+        this.getGenres();
+    }
+
+    getGenres() {
+        axios.get('/genres')
+        .then((response) => {
+            this.setState({
+                fullGenreList: response.data
+            }, () => {
+                console.log('response.data: ', response.data);
+            })
+        })
+        .catch((err) => {
+            console.log('Error received from Axios GET request: ', err);
+        })
     }
 
     clickGenre(event) {
@@ -55,6 +75,8 @@ class App extends React.Component {
 
     render() {
         // console.log('testSeeds: ', testSeeds);
+
+        // if using spotify, must create a conditional to render log in page
 
         if (!this.state.wasGenreSelected) {
 

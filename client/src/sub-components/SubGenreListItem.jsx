@@ -34,7 +34,9 @@ class SubGenreListItem extends React.Component {
             return (
                 <div>
                     <h4>{this.props.item.subGenreName}</h4>
-                    {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/8ATu1BiOPZA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+
+                    <iframe src={this.props.item.songLink} width="45%" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
                     <p>Mini audio player will be here</p>
                 </div>
             )

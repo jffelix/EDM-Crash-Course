@@ -15,14 +15,14 @@ const genreItemSchema = new mongoose.Schema({
 
 var genreItem = mongoose.model('Item', genreItemSchema);
 
-// genreItem as a variable will allow use of it's methods
-genreItem.create(genreList)
-    .then((response) => {
-        // console.log('response from db: ', response);
-        console.log('Populated collection!');
-    })
-    .catch((err) => {
-        console.log('Error received during population: ', err);
-    });
+// // genreItem as a variable will allow use of it's methods
+// genreItem.create(genreList)
+//     .then((response) => {
+//         // console.log('response from db: ', response);
+//         console.log('Populated collection!');
+//     })
+//     .catch((err) => {
+//         console.log('Error received during population: ', err);
+//     });
 
 module.exports = genreItem;

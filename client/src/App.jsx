@@ -4,6 +4,8 @@ import GenreList from './sub-components/GenreList.jsx';
 import SubGenreList from './sub-components/SubGenreList.jsx';
 import axios from 'axios';
 
+import "./App.css";
+
 class App extends React.Component {
 
     constructor(props) {
@@ -54,7 +56,7 @@ class App extends React.Component {
     }
 
     showSubGenreList(genre) {
-        console.log('genre from showSubGenreList: ', genre);
+        // console.log('genre from showSubGenreList: ', genre);
 
         var matchedGenre = null;
 
@@ -81,7 +83,7 @@ class App extends React.Component {
         if (!this.state.wasGenreSelected) {
 
             return (
-                <div>
+                <div className="main">
                     <h1>EDM Crash Course!</h1>
                     <i>Does all electronic music really sound the same?</i>
                     <GenreList list={testSeeds} clickGenre={this.clickGenre} />
@@ -91,7 +93,7 @@ class App extends React.Component {
         } else {
 
             return (
-                <div>
+                <div className="main">
                     <h1>EDM Crash Course!</h1>
                     <i>Does all electronic music really sound the same?</i>
                     <GenreList list={this.state.fullGenreList} clickGenre={this.clickGenre} />

@@ -67,10 +67,14 @@ var genreList = [
     },
     {
         genreName: 'Trap',
-        hasSubGenres: false,
+        hasSubGenres: true,
         subGenres: [
             {
                 subGenreName: 'Trap',
+                songLink: null
+            },
+            {
+                subGenreName: 'Chill Trap',
                 songLink: null
             }
         ]
@@ -112,6 +116,16 @@ var genreList = [
         ]
     },
     {
+        genreName: 'Drum and Bass',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Drum and Bass',
+                songLink: null
+            }
+        ]
+    },
+    {
         genreName: 'Hard Dance',
         hasSubGenres: true,
         subGenres: [
@@ -128,7 +142,27 @@ var genreList = [
                 songLink: null
             }
         ]
-    }
+    },
+    {
+        genreName: 'Synthwave',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Synthwave',
+                songLink: null
+            }
+        ]
+    },
+    {
+        genreName: 'Techno',
+        hasSubGenres: false,
+        subGenres: [
+            {
+                subGenreName: 'Techno',
+                songLink: null
+            }
+        ]
+    },
 ];
 
 module.exports = genreList;
@@ -158,3 +192,4 @@ module.exports = genreList;
     // happy hardcore
 // drum and bass
 // synthwave
+// techno

@@ -1,0 +1,30 @@
+{
+  "name": "mvp-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jffelix/MVP-Project.git"
+  },
+  "author": "Jean-Luc Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jffelix/MVP-Project/issues"
+  },
+  "homepage": "https://github.com/jffelix/MVP-Project#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.8",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

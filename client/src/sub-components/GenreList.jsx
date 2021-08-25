@@ -9,9 +9,7 @@ var GenreList = (props) => (
         <select className="genreOption" onClick={props.clickGenre}>
             {props.list.map((genre, index) =>
             
-                < GenreListItem 
-                item={genre} 
-                key={index} />
+                < GenreListItem item={genre} key={index} />
 
             )}
         </select>

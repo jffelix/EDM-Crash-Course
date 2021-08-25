@@ -11,6 +11,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            isAuthenticated: false,
             fullGenreList: [],
             wasGenreSelected: false,
             selectedGenre: null,
@@ -22,11 +23,35 @@ class App extends React.Component {
         this.getGenres = this.getGenres.bind(this);
         this.clickGenre = this.clickGenre.bind(this);
         this.showSubGenreList = this.showSubGenreList.bind(this);
-        this.clickPlaySong = this.clickPlaySong.bind(this);
+        // this.clickPlaySong = this.clickPlaySong.bind(this);
+        this.getLoginPage = this.getLoginPage.bind(this);
     }
 
-    componentDidMount() {
-        this.getGenres();
+    // componentDidMount() {
+    //     this.getGenres();
+    //     // this.getLoginPage();
+    // }
+
+    getLoginPage() {
+        // Create Axios GET request
+        // then promise chain invokes this.getGenres()
+        axios.get('/login')
+        .then(() => {
+
+            this.setState({
+                isAuthenticated: true
+            })
+
+        })
+        .then(() => {
+        
+            this.getGenres();
+
+            console.log('Connected with Axios GET request for login!');
+        })
+        .catch((err) => {
+            console.log('Error received during Axios GET request for login: ', err);
+        })
     }
 
     getGenres() {
@@ -84,18 +109,25 @@ class App extends React.Component {
 
     }
 
-    clickPlaySong() {
-        this.setState({
-            wasPlaySongClicked: true
-        })
-    }
+    // clickPlaySong() {
+    //     this.setState({
+    //         wasPlaySongClicked: true
+    //     })
+    // }
 
     render() {
         // console.log('testSeeds: ', testSeeds);
 
         // if using spotify, must create a conditional to render log in page
 
-        if (!this.state.wasGenreSelected) {
+        if (!this.state.isAuthenticated) {
+            return (
+                <div className="login">
+                    <h1>Please login to Spotify to continue</h1>
+                    <button onClick={() => this.getLoginPage()}>Login</button>
+                </div>
+            )
+        } else if (this.state.isAuthenticated && !this.state.wasGenreSelected) {
 
             return (
                 <div className="main">
@@ -116,7 +148,7 @@ class App extends React.Component {
 
                     <SubGenreList 
                     subList={this.state.subGenreList.subGenres}
-                    clickPlaySong={this.clickPlaySong}
+                    // clickPlaySong={this.clickPlaySong}
                     wasPlaySongClicked={this.state.wasPlaySongClicked} />
                 </div>
             )

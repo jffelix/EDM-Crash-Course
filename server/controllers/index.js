@@ -2,16 +2,51 @@ const dbHelpers = require('../models/index.js');
 const mongoose = require('mongoose');
 
 const SpotifyWebApi = require('spotify-web-api-node');
-const my_client_id = '31f7861b80164367b314769d0df02af0';
-const my_client_secret = 'fd64c363f32f4c64b557c8193106ad4e';
+// const querystring = require('querystring');
+const client_id = '31f7861b80164367b314769d0df02af0';
+const client_secret = 'fd64c363f32f4c64b557c8193106ad4e';
 const redirect_uri = 'localhost:4001/genres';
-var scopes = ['user-read-private user-read-email'];
 
-var spotifyApi = new SpotifyWebApi({
-    clientId: my_client_id,
-    clientSecret: my_client_secret,
-    redirectUri: redirect_uri
-})
+// var generateRandomString = function(length) {
+//     var text = '';
+//     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  
+//     for (var i = 0; i < length; i++) {
+//       text += possible.charAt(Math.floor(Math.random() * possible.length));
+//     }
+//     return text;
+// };
+
+// var stateKey = 'spotify_auth_state';
+
+const scopes = [
+    'ugc-image-upload',
+    'user-read-playback-state',
+    'user-modify-playback-state',
+    'user-read-currently-playing',
+    'streaming',
+    'app-remote-control',
+    'user-read-email',
+    'user-read-private',
+    'playlist-read-collaborative',
+    'playlist-modify-public',
+    'playlist-read-private',
+    'playlist-modify-private',
+    'user-library-modify',
+    'user-library-read',
+    'user-top-read',
+    'user-read-playback-position',
+    'user-read-recently-played',
+    'user-follow-read',
+    'user-follow-modify'
+];
+  
+const spotifyApi = new SpotifyWebApi({
+    redirectUri: 'http://localhost:8888/callback',
+    clientId: process.argv.slice(2)[0],
+    clientSecret: process.argv.slice(2)[1]
+});
+
 
 const controllers = {
 
@@ -30,7 +65,18 @@ const controllers = {
     },
 
     loginPage: function(req, res) {
-        res.redirect(spotifyApi.createAuthorizeURL(scopes));
+
+        res.send("Hello from loginPage in controllers!");
+
+    },
+
+    loginCallback: function(req, res) {
+
+        // res.send('Hello from callback in controllers!');
+    },
+
+    refreshToken: function(req, res) {
+        res.send('Hello from refreshToken in controllers!')
     }
 
 }

@@ -25,16 +25,16 @@ class SubGenreListItem extends React.Component {
         if (!this.state.wasPlayButtonClicked) {
 
             return (
-                <div>
+                <div className="subGenre">
                     <h4>{this.props.item.subGenreName}</h4>
-                    <button onClick={this.clickPlay}>Play Song</button>
+                    <button className="playSong" onClick={this.clickPlay}>Play Song</button>
                 </div>
             )
 
         } else {
 
             return (
-                <div>
+                <div className="subGenre">
                     <h4>{this.props.item.subGenreName}</h4>
 
                     {/* <iframe src={this.props.item.songLink} width="30%" height="50" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}

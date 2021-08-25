@@ -97,14 +97,14 @@
     color: rgb(17, 61, 184);
     background-color: rgb(181, 6, 235);
     border-width: 2em;
-    border-radius: 70px;
+    border-radius: 100px;
 }
 
 .technoMain {
     padding: 20px;
     margin: 50px;
     text-align: center;
-    border-style: none;
+    border-style: solid;
     color: rgb(5, 5, 5);
     background-color: rgb(133, 131, 131);
     border-width: 2em; 
@@ -121,6 +121,24 @@
 
 .listBorder {
     padding: 40px;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
     border-bottom: solid;
     font-weight: thin;
+}
+
+.genreOption {
+    font-size: 16px;
+}
+
+.subGenre {
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.playSong {
+    padding: 14px;
+    border-style: none;
+    border-radius: 30px;
+    font-weight: bold;
 }

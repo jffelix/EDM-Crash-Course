@@ -37,11 +37,9 @@ class App extends React.Component {
         // then promise chain invokes this.getGenres()
         axios.get('/login')
         .then(() => {
-
             this.setState({
                 isAuthenticated: true
             })
-
         })
         .then(() => {
         
@@ -100,7 +98,7 @@ class App extends React.Component {
 
         }, () => {
             // console.log('genreColor: ', genreParsed.genreColor);
-            console.log('subGenreList: ', this.state.subGenreList);
+            // console.log('subGenreList: ', this.state.subGenreList);
 
             this.setState({
                 selectedColor: this.state.subGenreList.genreColor
@@ -141,7 +139,7 @@ class App extends React.Component {
 
             return (
                 <div className={this.state.selectedColor} >
-                    <h1 className="title">EDM Crash Course!</h1>
+                    {/* <h1 className="title">EDM Crash Course!</h1> */}
                     <i className="subTitle">Click around and explore!</i>
                     <GenreList list={this.state.fullGenreList} clickGenre={this.clickGenre} />
                     <p></p>

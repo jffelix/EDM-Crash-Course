@@ -36,21 +36,35 @@ class App extends React.Component {
     getLoginPage() {
         // Create Axios GET request
         // then promise chain invokes this.getGenres()
-        axios.get('/login')
-        .then(() => {
-            this.setState({
-                isAuthenticated: true
-            })
-            
-        })
-        .then(() => {
-            this.getGenres();
-            console.log('Connected with Axios GET request for login!');
 
-        })
-        .catch((err) => {
-            console.log('Error received during Axios GET request for login: ', err);
-        })
+        // axios.get('/login')
+        // .then(() => {
+        //     // this.setState({
+        //     //     isAuthenticated: true
+        //     // })
+            
+        // })
+        // .then(() => {
+        //     this.getGenres();
+        //     console.log('Connected with Axios GET request for login!');
+
+        // })
+        // .catch((err) => {
+        //     console.log('Error received during Axios GET request for login: ', err);
+        // })
+
+        const client_id = '31f7861b80164367b314769d0df02af0';
+        const redirect_uri = 'http://localhost:4001/genres';
+
+        var scopes = ['streaming'];
+
+        window.location = 'https://accounts.spotify.com/authorize' +
+        '?response_type=code' +
+        '&client_id=' + client_id +
+        (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
+        '&redirect_uri=' + encodeURIComponent(redirect_uri);
+
+
     }
 
     getGenres() {

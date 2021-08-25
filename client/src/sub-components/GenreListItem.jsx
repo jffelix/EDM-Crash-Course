@@ -20,7 +20,6 @@ class GenreListItem extends React.Component {
         var genreStringify = JSON.stringify(this.props.item.genreName);
 
         return (
-
             <option value={genreStringify}>{this.props.item.genreName}</option>
 
         )

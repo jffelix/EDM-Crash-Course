@@ -7,45 +7,33 @@ const client_id = '31f7861b80164367b314769d0df02af0';
 const client_secret = 'fd64c363f32f4c64b557c8193106ad4e';
 const redirect_uri = 'localhost:4001/genres';
 
-// var generateRandomString = function(length) {
-//     var text = '';
-//     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// const scopes = [
+//     'ugc-image-upload',
+//     'user-read-playback-state',
+//     'user-modify-playback-state',
+//     'user-read-currently-playing',
+//     'streaming',
+//     'app-remote-control',
+//     'user-read-email',
+//     'user-read-private',
+//     'playlist-read-collaborative',
+//     'playlist-modify-public',
+//     'playlist-read-private',
+//     'playlist-modify-private',
+//     'user-library-modify',
+//     'user-library-read',
+//     'user-top-read',
+//     'user-read-playback-position',
+//     'user-read-recently-played',
+//     'user-follow-read',
+//     'user-follow-modify'
+// ];
   
-//     for (var i = 0; i < length; i++) {
-//       text += possible.charAt(Math.floor(Math.random() * possible.length));
-//     }
-//     return text;
-// };
-
-// var stateKey = 'spotify_auth_state';
-
-const scopes = [
-    'ugc-image-upload',
-    'user-read-playback-state',
-    'user-modify-playback-state',
-    'user-read-currently-playing',
-    'streaming',
-    'app-remote-control',
-    'user-read-email',
-    'user-read-private',
-    'playlist-read-collaborative',
-    'playlist-modify-public',
-    'playlist-read-private',
-    'playlist-modify-private',
-    'user-library-modify',
-    'user-library-read',
-    'user-top-read',
-    'user-read-playback-position',
-    'user-read-recently-played',
-    'user-follow-read',
-    'user-follow-modify'
-];
-  
-const spotifyApi = new SpotifyWebApi({
-    redirectUri: 'http://localhost:8888/callback',
-    clientId: process.argv.slice(2)[0],
-    clientSecret: process.argv.slice(2)[1]
-});
+// const spotifyApi = new SpotifyWebApi({
+//     redirectUri: 'http://localhost:8888/login',
+//     clientId: client_id,
+//     clientSecret: client_secret
+// });
 
 
 const controllers = {
@@ -65,6 +53,8 @@ const controllers = {
     },
 
     loginPage: function(req, res) {
+
+        // res.redirect(spotifyApi.createAuthorizeURL(scopes));
 
         res.send("Hello from loginPage in controllers!");
 

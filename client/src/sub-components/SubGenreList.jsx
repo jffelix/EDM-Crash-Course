@@ -18,7 +18,9 @@ var SubGenreList = (props) => {
                     <SubGenreListItem 
                     item={subGenre} 
                     key={index}
-                    // clickPlaySong={props.clickPlaySong}
+
+                    wasGenreToggled={props.wasGenreToggled}
+                    
                     wasPlaySongClicked={props.wasPlaySongClicked} />
 
                 )}

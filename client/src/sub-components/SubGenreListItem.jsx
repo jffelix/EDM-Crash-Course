@@ -14,9 +14,18 @@ class SubGenreListItem extends React.Component {
     }
 
     clickPlay() {
+
+        // need to figure out how to stop song when another genre is selected
+
         this.setState({
             wasPlayButtonClicked: true
         })
+
+        // this.setState(prevState => ({
+        //     wasPlayButtonClicked: true
+        // }), () => {
+        //     console.log('wasPlayButtonClicked: ', this.state.wasPlayButtonClicked)
+        // })
     }
 
     render() {
@@ -39,6 +48,8 @@ class SubGenreListItem extends React.Component {
 
                     {/* <iframe src={this.props.item.songLink} width="30%" height="50" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
 
+                    {/* <p>Testing toggle feature</p> */}
+
                     <iframe src={this.props.item.songLink} width="50%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             )
@@ -54,3 +65,7 @@ class SubGenreListItem extends React.Component {
 }
 
 export default SubGenreListItem;
+
+
+
+// (this.props.wasGenreToggled && this.state.wasPlayButtonClicked)

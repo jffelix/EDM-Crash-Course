@@ -17,7 +17,8 @@ class App extends React.Component {
             selectedGenre: null,
             subGenreList: [],
             wasPlaySongClicked: false,
-            selectedColor: null
+            selectedColor: null,
+            wasGenreToggled: false
         }
 
         this.getGenres = this.getGenres.bind(this);
@@ -40,12 +41,12 @@ class App extends React.Component {
             this.setState({
                 isAuthenticated: true
             })
+            
         })
         .then(() => {
-        
             this.getGenres();
-
             console.log('Connected with Axios GET request for login!');
+
         })
         .catch((err) => {
             console.log('Error received during Axios GET request for login: ', err);
@@ -57,8 +58,9 @@ class App extends React.Component {
         .then((response) => {
             this.setState({
                 fullGenreList: response.data
+
             }, () => {
-                console.log('response.data: ', response.data);
+                console.log('response data: ', response.data);
             })
         })
         .catch((err) => {
@@ -69,6 +71,16 @@ class App extends React.Component {
     clickGenre(event) {
         // console.log('clicked genre: ', event.target.value);
         var genreParsed = JSON.parse(event.target.value);
+        // console.log('genreParsed: ', genreParsed);
+
+        // if switching to another genre
+        if (this.state.selectedGenre !== genreParsed) {
+            this.setState({
+                wasGenreToggled: true
+            }, () => {
+                console.log('wasGenreToggled: ', this.state.wasGenreToggled);
+            })
+        }
         
         this.setState({
             selectedGenre: genreParsed,
@@ -76,7 +88,7 @@ class App extends React.Component {
         }, () => {
 
             this.showSubGenreList(genreParsed);
-            // console.log('selectedColor: ', this.state.selectedColor);
+            // console.log('selectedGenre: ', this.state.selectedGenre);
         })
 
     }
@@ -146,7 +158,8 @@ class App extends React.Component {
 
                     <SubGenreList 
                     subList={this.state.subGenreList.subGenres}
-                    // clickPlaySong={this.clickPlaySong}
+
+                    wasGenreToggled={this.state.wasGenreToggled}
                     wasPlaySongClicked={this.state.wasPlaySongClicked} />
                 </div>
             )

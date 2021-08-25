@@ -15,7 +15,11 @@ var SubGenreList = (props) => {
             <div>
                 {props.subList.map((subGenre, index) => 
                 
-                    <SubGenreListItem item={subGenre} key={index} />
+                    <SubGenreListItem 
+                    item={subGenre} 
+                    key={index}
+                    clickPlaySong={props.clickPlaySong}
+                    wasPlaySongClicked={props.wasPlaySongClicked} />
 
                 )}
             </div>

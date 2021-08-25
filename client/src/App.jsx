@@ -14,12 +14,15 @@ class App extends React.Component {
             fullGenreList: [],
             wasGenreSelected: false,
             selectedGenre: null,
-            subGenreList: []
+            subGenreList: [],
+            wasPlaySongClicked: false,
+            selectedColor: null
         }
 
         this.getGenres = this.getGenres.bind(this);
         this.clickGenre = this.clickGenre.bind(this);
         this.showSubGenreList = this.showSubGenreList.bind(this);
+        this.clickPlaySong = this.clickPlaySong.bind(this);
     }
 
     componentDidMount() {
@@ -46,11 +49,11 @@ class App extends React.Component {
         
         this.setState({
             selectedGenre: genreParsed,
-            wasGenreSelected: true
+            wasGenreSelected: true,
         }, () => {
 
             this.showSubGenreList(genreParsed);
-            // console.log('selectedGenre: ', this.state.selectedGenre);
+            // console.log('selectedColor: ', this.state.selectedColor);
         })
 
     }
@@ -69,10 +72,22 @@ class App extends React.Component {
 
         this.setState({
             subGenreList: matchedGenre
+
         }, () => {
+            // console.log('genreColor: ', genreParsed.genreColor);
             console.log('subGenreList: ', this.state.subGenreList);
+
+            this.setState({
+                selectedColor: this.state.subGenreList.genreColor
+            })
         })
 
+    }
+
+    clickPlaySong() {
+        this.setState({
+            wasPlaySongClicked: true
+        })
     }
 
     render() {
@@ -93,13 +108,16 @@ class App extends React.Component {
         } else {
 
             return (
-                <div className="main">
+                <div className={this.state.selectedColor} >
                     <h1 className="title">EDM Crash Course!</h1>
-                    <i className="subTitle">Does all electronic music really sound the same?</i>
+                    <i className="subTitle">Click around and explore!</i>
                     <GenreList list={this.state.fullGenreList} clickGenre={this.clickGenre} />
                     <p></p>
 
-                    <SubGenreList subList={this.state.subGenreList.subGenres} />
+                    <SubGenreList 
+                    subList={this.state.subGenreList.subGenres}
+                    clickPlaySong={this.clickPlaySong}
+                    wasPlaySongClicked={this.state.wasPlaySongClicked} />
                 </div>
             )
 

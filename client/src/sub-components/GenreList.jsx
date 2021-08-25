@@ -1,14 +1,17 @@
 import React from 'react';
 import GenreListItem from './GenreListItem.jsx';
+import '../App.css';
 
 var GenreList = (props) => (
 
-    <div>
+    <div className="listBorder">
         <h2>Choose a genre</h2>
         <select onClick={props.clickGenre}>
             {props.list.map((genre, index) =>
             
-                <GenreListItem item={genre} key={index} />
+                < GenreListItem 
+                item={genre} 
+                key={index} />
 
             )}
         </select>

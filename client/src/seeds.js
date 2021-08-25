@@ -2,6 +2,7 @@ var genreList = [
     {
         genreName: 'House',
         hasSubGenres: true,
+        genreColor: 'houseMain',
         subGenres: [
             {
                 subGenreName: 'Progressive House',
@@ -48,6 +49,7 @@ var genreList = [
     {
         genreName: 'Trance',
         hasSubGenres: true,
+        genreColor: 'tranceMain',
         subGenres: [
             {
                 subGenreName: 'Vocal Trance',
@@ -75,17 +77,19 @@ var genreList = [
     {
         genreName: 'Future Bass',
         hasSubGenres: false,
+        genreColor: 'futureBassMain',
         subGenres: [
             {
                 subGenreName: 'Future Bass',
                 // You and Me
-                songLink: 'https://open.spotify.com/track/36meE3FrlfHJmc1Yi37JQx?si=bbc79f294c7e4092'
+                songLink: 'https://open.spotify.com/track/1snNAXmmPXCn0dkF9DaPWw?si=c6ab176a894a4897'
             }
         ]
     },
     {
         genreName: 'Trap',
         hasSubGenres: true,
+        genreColor: 'trapMain',
         subGenres: [
             {
                 subGenreName: 'Trap',
@@ -100,8 +104,9 @@ var genreList = [
         ]
     },
     {
-        genreName: 'Moombathon',
+        genreName: 'Moombahton',
         hasSubGenres: false,
+        genreColor: 'moombahtonMain',
         subGenres: [
             {
                 subGenreName: 'Moombahton',
@@ -113,6 +118,7 @@ var genreList = [
     {
         genreName: 'Dubstep',
         hasSubGenres: true,
+        genreColor: 'dubstepMain',
         subGenres: [
             {
                 subGenreName: 'Dubstep',
@@ -143,6 +149,7 @@ var genreList = [
     {
         genreName: 'Drum and Bass',
         hasSubGenres: false,
+        genreColor: 'drumAndBassMain',
         subGenres: [
             {
                 subGenreName: 'Drum and Bass',
@@ -154,6 +161,7 @@ var genreList = [
     {
         genreName: 'Hard Dance',
         hasSubGenres: true,
+        genreColor: 'hardDanceMain',
         subGenres: [
             {
                 subGenreName: 'Hardstyle',
@@ -174,6 +182,7 @@ var genreList = [
     {
         genreName: 'Synthwave',
         hasSubGenres: false,
+        genreColor: 'synthwaveMain',
         subGenres: [
             {
                 subGenreName: 'Synthwave',
@@ -184,6 +193,7 @@ var genreList = [
     {
         genreName: 'Techno',
         hasSubGenres: false,
+        genreColor: 'technoMain',
         subGenres: [
             {
                 subGenreName: 'Techno',

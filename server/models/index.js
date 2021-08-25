@@ -5,6 +5,7 @@ const genreList = require('../../client/src/seeds.js');
 const genreItemSchema = new mongoose.Schema({
     genreName: {type: String},
     hasSubGenres: {type: Boolean},
+    genreColor: {type: String},
     subGenres: [
         {
             subGenreName: String,

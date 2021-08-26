@@ -31,6 +31,7 @@ class SubGenreListItem extends React.Component {
     render() {
         // if button hasn't been pushed yet
 
+        // allows YouTube to be played in app
         var songLink = this.props.item.songLink.replace("watch?v=", "embed/")
 
         if (!this.state.wasPlayButtonClicked) {

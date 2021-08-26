@@ -33,6 +33,11 @@ var genreList = [
                 songLink: 'https://www.youtube.com/watch?v=KSs0ih3A3ZI'
             },
             {
+                subGenreName: 'Dirty Dutch',
+                // Let The Bass Kick
+                songLink: 'https://www.youtube.com/watch?v=li6_41Fusbw'
+            },
+            {
                 subGenreName: 'Future House',
                 // // Gecko (Overdrive)
                 // songLink: 'https://open.spotify.com/track/50PPSxXsLw8n4CQrWPopIW?si=d7348d2dd7a84c7c'
@@ -169,8 +174,8 @@ var genreList = [
             {
                 subGenreName: 'Brostep',
 
-                // Flux Pavillion - Excuse Me
-                songLink: 'https://www.youtube.com/watch?v=W8xIGRY_BIw'
+                // Skrillex - All Is Fair In Love And Brostep
+                songLink: 'https://www.youtube.com/watch?v=6JYIGclVQdw'
             },
             {
                 subGenreName: 'Melodic Dubstep',

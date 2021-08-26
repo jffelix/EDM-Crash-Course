@@ -114,7 +114,7 @@ body {
 
 .hardDanceMain {
     padding: 20px;
-    margin: 40px 225px;
+    margin: 40px 250px;
     text-align: center;
     border-style: none;
     color: rgb(231, 48, 2);
@@ -153,6 +153,11 @@ body {
 
 .genreOption {
     font-size: 16px;
+    padding: 4px;
+    font-family: Verdana, sans-serif;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 100;
 }
 
 .subGenre {

@@ -140,7 +140,12 @@ var genreList = [
                 // songLink: 'https://open.spotify.com/track/57kR5SniQIbsbVoIjjOUDa?si=bb6a5847a2a745b5'
 
                 songLink: 'https://www.youtube.com/watch?v=MIuJVYNvC-s'
-            }
+            },
+            {
+                subGenreName: 'Heaven Trap',
+                // Pompeii (Slander Remix)
+                songLink: 'https://www.youtube.com/watch?v=lhH8VizzroY'
+            },
         ]
     },
     {

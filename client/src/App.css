@@ -1,24 +1,51 @@
-.body {
-    color: black;
+body {
+    /* color: black; */
+    background-color: rgb(58, 247, 105);
+    background-image: url("https://wallpapercave.com/wp/wp2343900.png");
+    padding: 100px 0;
+    /* background-size: contain; */
 }
 
 .login {
     text-align: center;
-    margin-top: 75px;
+    color: white;
+    font-size: 24px;
+    margin-top: 150px;
+    font-family: Verdana, sans-serif;
+}
+
+.loginButton {
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    border-style: none;
+    padding: 10px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+}
+
+.subTitle {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 5px;
 }
 
 .main {
     padding: 20px;
-    margin: 70px;
+    margin: 40px 300px;
     text-align: center;
     border-style: none;
-    background-color: rgb(252, 251, 206);
+    background-color: rgb(248, 247, 192);
     border-radius: 20px;
 }
 
 .houseMain {
     padding: 20px;
-    margin: 50px;
+    margin: 40px 275px;
     text-align: center;
     border-style: solid;
     color: rgb(214, 218, 221);
@@ -28,17 +55,17 @@
 
 .tranceMain {
     padding: 20px;
-    margin: 70px;
+    margin: 40px 275px;
     text-align: center;
     border-style: none;
     color: rgb(251, 253, 253);
-    background-color: rgb(88, 215, 238);
+    background-color: rgb(88, 202, 223);
     /* border-radius: 10px; */
 }
 
 .futureBassMain {
     padding: 20px;
-    margin: 80px;
+    margin: 40px 350px;
     text-align: center;
     border-style: none;
     background-color: rgb(216, 197, 25);
@@ -47,7 +74,7 @@
 
 .trapMain {
     padding: 20px;
-    margin: 80px;
+    margin: 40px 300px;
     text-align: center;
     border-style: solid;
     background-color: rgb(161, 15, 10);
@@ -56,7 +83,7 @@
 
 .moombahtonMain {
     padding: 20px;
-    margin: 90px;
+    margin: 40px 400px;
     text-align: center;
     border-style: solid;
     background-color: rgb(136, 214, 10);
@@ -65,7 +92,7 @@
 
 .dubstepMain {
     padding: 20px;
-    margin: 40px;
+    margin: 40px 300px;
     text-align: center;
     border-style: solid;
     color: rgb(249, 250, 253);
@@ -76,10 +103,10 @@
 
 .drumAndBassMain {
     padding: 20px;
-    margin: 60px;
+    margin: 40px 300px;
     text-align: center;
     border-style: none;
-    color: rgb(194, 195, 199);
+    color: rgb(238, 240, 245);
     background-color: rgb(2, 13, 112);
     /* border-width: 1em;  */
     border-radius: 40px;
@@ -87,7 +114,7 @@
 
 .hardDanceMain {
     padding: 20px;
-    margin: 50px;
+    margin: 40px 225px;
     text-align: center;
     border-style: none;
     color: rgb(231, 48, 2);
@@ -97,10 +124,10 @@
 
 .synthwaveMain {
     padding: 20px;
-    margin: 70px;
+    margin: 40px 350px;
     text-align: center;
     border-style: none;
-    color: rgb(17, 61, 184);
+    color: rgb(10, 48, 153);
     background-color: rgb(181, 6, 235);
     border-width: 2em;
     border-radius: 100px;
@@ -108,21 +135,12 @@
 
 .technoMain {
     padding: 20px;
-    margin: 50px;
+    margin: 40px 275px;
     text-align: center;
     border-style: solid;
     color: rgb(5, 5, 5);
     background-color: rgb(133, 131, 131);
     border-width: 2ex 1.25ex 0.5ex;
-}
-
-.title {
-    font-family: Arial, sans-serif;
-}
-
-.subTitle {
-    font-size: 20px;
-    /* padding: 50px; */
 }
 
 .listBorder {

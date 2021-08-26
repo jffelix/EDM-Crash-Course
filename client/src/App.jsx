@@ -161,16 +161,19 @@ class App extends React.Component {
         if (!this.state.isAuthenticated) {
             return (
                 <div className="login">
-                    <h1>Please login to Spotify to continue</h1>
-                    <button onClick={() => this.getLoginPage()}>Login</button>
+                    {/* <h1>Please login to Spotify to continue</h1> */}
+                    <h1 className="title">Welcome to EDM Crash Course!</h1>
+                    <i className="subTitle">Does all electronic music really sound the same?</i>
+                    <p></p>
+                    <button className="loginButton" onClick={() => this.getLoginPage()}>Click to Begin</button>
                 </div>
             )
         } else if (this.state.isAuthenticated && !this.state.wasGenreSelected) {
 
             return (
                 <div className="main">
-                    <h1 className="title">EDM Crash Course!</h1>
-                    <i className="subTitle">Does all electronic music really sound the same?</i>
+                    {/* <h1 className="title">EDM Crash Course!</h1> */}
+                    {/* <i className="subTitle">Does all electronic music really sound the same?</i> */}
                     <GenreList list={testSeeds} clickGenre={this.clickGenre} />
                 </div>
             )
@@ -179,8 +182,8 @@ class App extends React.Component {
 
             return (
                 <div className={this.state.selectedColor} >
-                    {/* <h1 className="title">EDM Crash Course!</h1> */}
-                    <i className="subTitle">Click around and explore!</i>
+                    {/* <h1 className="title">EDM Crash Course!</h1>
+                    <i className="subTitle">Click around and explore!</i> */}
                     <GenreList list={this.state.fullGenreList} clickGenre={this.clickGenre} />
                     <p></p>
 

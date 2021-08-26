@@ -27,63 +27,116 @@ const SpotifyWebApi = require('spotify-web-api-node');
 //     'user-follow-read',
 //     'user-follow-modify'
 // ];
-  
-// const spotifyApi = new SpotifyWebApi({
-//     redirectUri: 'http://localhost:8888/login',
-//     clientId: client_id,
-//     clientSecret: client_secret
-// });
+
+var accessToken = null;
+var refreshToken = null;
 
 
 const controllers = {
 
     getGenres: function(req, res) {
 
-        // req.query.code permits to retreive token 
 
-        var reqSpotifyCode = {
-            grant_type: "authorization_code",
-            code: req.query.code,
-            redirect_uri: 'http://localhost:4001/genres',
-            client_id: '31f7861b80164367b314769d0df02af0',
-            client_secret: 'fd64c363f32f4c64b557c8193106ad4e'
-        };
+        // // CODE TO AUTHENTICATE AND RETRIEVE ACCESS TOKEN
 
-        const headers = {
-            'Content-Type': 'application/x-www-form-urlencoded'
-            // 'Authorization': 'JWT fefege...'
-          }
+        // var reqSpotifyCode = {
+        //     grant_type: "authorization_code",
+        //     // req.query.code permits to retreive token 
+        //     code: req.query.code,
+        //     redirect_uri: 'http://localhost:4001/genres',
+        //     client_id: '31f7861b80164367b314769d0df02af0',
+        //     client_secret: 'fd64c363f32f4c64b557c8193106ad4e'
+        // };
 
-        axios({
-            url: 'https://accounts.spotify.com/api/token',
-            method: 'POST',
-            params: reqSpotifyCode,
-            headers: headers
-        })
-        .then((response) => {
-            // response.data.access_token
-            console.log('access token: ', response.data.access_token);
+        // const headers = {
+        //     'Content-Type': 'application/x-www-form-urlencoded'
+        //     // 'Authorization': 'JWT fefege...'
+        //   }
 
-            // response.data.refresh_token
-            console.log('refresh token: ', response.data.refresh_token);
+        // // POST request to retrieve Spotify access and refresh tokens
 
-            // debugger;
-        })
-        .catch((err) => {
-            // debugger;
-            console.log('Error received from Axios in controllers.', err);
-        })
+        // axios({
+        //     url: 'https://accounts.spotify.com/api/token',
+        //     method: 'POST',
+        //     params: reqSpotifyCode,
+        //     headers: headers
+        // })
+        // .then((response) => {
+        //     // // response.data.access_token
+        //     // console.log('access token: ', response.data.access_token);
 
+        //     // // response.data.refresh_token
+        //     // console.log('refresh token: ', response.data.refresh_token);
+
+        //     console.log('response.data from server: ', response.data);
+
+        //     accessToken = response.data.access_token;
+        //     refreshToken = response.data.refresh_token;
+
+
+        //     // GET request to retrieve genre data
+
+        //     dbHelpers.find()
+        //     .then((results) => {
+        //         // send back to home page
+        //         // send back tokens
+        //         // send back genre data from 'results'
+
+        //         var resultsObj = {
+        //             access_token: accessToken,
+        //             refresh_token: refreshToken,
+        //             genreData: results
+        //         }
+
+        //         // console.log('resultsObj: ', resultsObj);
+
+        //         res.status(200).send(resultsObj);
+        //         res.redirect('http://localhost:4001/genres');
+
+        //         // res.send("Hello from dbHelpers in controllers!");
+
+        //         // console.log('results from .find(): ', results);
+        //         console.log('Connected with dbHelpers.find()!');
+        //     })
+        //     .catch((err) => {
+        //         res.status(400).send(err);
+        //         console.log('Error recevied at dbHelpers.find()');
+        //     })
+
+
+        //     // debugger;
+        // })
+        // .catch((err) => {
+        //     // debugger;
+        //     console.log('Error received from Axios in controllers.', err);
+        // })
+
+
+
+        // BACKUP CODE IN CASE AUTHENTICATION DOESN'T WORK
 
         // GET request to retrieve genre data
 
         dbHelpers.find()
         .then((results) => {
             // send back to home page
-            // send token
-            // send back genre data
-            res.redirect('http://localhost:4001/genres')
+            // send back tokens
+            // send back genre data from 'results'
+
+            // var resultsObj = {
+            //     access_token: accessToken,
+            //     refresh_token: refreshToken,
+            //     data: results
+            // }
+
+            // console.log('resultsObj: ', resultsObj);
+
+            // res.redirect('http://localhost:4001/genres')
             // res.send(results);
+
+            res.status(200).send(results);
+
+            // console.log('results from .find(): ', results);
             console.log('Connected with dbHelpers.find()!');
         })
         .catch((err) => {
@@ -100,7 +153,7 @@ const controllers = {
 
         // res.header("Access-Control-Allow-Origin", "*");
 
-        // res.send("Hello from loginPage in controllers!");
+        res.send("Hello from loginPage in controllers!");
 
     },
 
@@ -116,3 +169,12 @@ const controllers = {
 }
 
 module.exports = controllers;
+
+
+
+
+
+
+
+// module.exports.getTracks = (callback, key, tempo, energy, valence) => {  spotifyApi.clientCredentialsGrant().then(    (data) => {      // console.log('The access token expires in ' + data.body['expires_in']);      // console.log('The access token is ' + data.body['access_token']);      // Save the access token so that it's used in future calls      spotifyApi.setAccessToken(data.body['access_token']);      getRecs(callback, key, tempo, energy, valence);    },    (err) => {      console.log('Something went wrong when retrieving an access token', err);    }  )}
+//     const getRecs = (callback, key, tempo, energy, valence) => {  spotifyApi.getRecommendations({    target_energy: energy,    seed_genres: ['ambient', 'classical'],    target_key: key,    min_key: key,    max_key: key,    target_tempo: tempo,    target_valence: valence,    target_danceability: valence,    target_loudness: energy  })    .then((data) => {      let recommendations = data.body;      callback(recommendations.tracks)    }, (err) =>  {      console.log("Something went wrong!", err);    });

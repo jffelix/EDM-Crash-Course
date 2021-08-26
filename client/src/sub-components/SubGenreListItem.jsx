@@ -31,6 +31,8 @@ class SubGenreListItem extends React.Component {
     render() {
         // if button hasn't been pushed yet
 
+        var songLink = this.props.item.songLink.replace("watch?v=", "embed/")
+
         if (!this.state.wasPlayButtonClicked) {
 
             return (
@@ -46,11 +48,16 @@ class SubGenreListItem extends React.Component {
                 <div className="subGenre">
                     <h4>{this.props.item.subGenreName}</h4>
 
-                    {/* <iframe src={this.props.item.songLink} width="30%" height="50" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
-
                     {/* <p>Testing toggle feature</p> */}
 
-                    <iframe src={this.props.item.songLink} width="50%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    {/* SPOTIFY IFRAME TAG */}
+
+                    {/* <iframe src={this.props.item.songLink} width="50%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
+
+                    {/* YOUTUBE BACKUP IFRAME TAG */}
+
+                    <iframe width="275" height="154.6875" src={songLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
                 </div>
             )
 

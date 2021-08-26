@@ -6,18 +6,24 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Progressive House',
-                // Don't You Worry Child
-                songLink: 'https://open.spotify.com/track/043bfUkTydw0xJ5JjOT91w?si=6dc0dd5b34d34827'
+                // // Don't You Worry Child
+                // songLink: 'https://open.spotify.com/track/043bfUkTydw0xJ5JjOT91w?si=6dc0dd5b34d34827'
+
+                songLink: 'https://www.youtube.com/watch?v=3mWbRB3Y4R8'
             },
             {
                 subGenreName: 'Electro House',
-                // Internet Friends
-                songLink: 'https://open.spotify.com/track/5qFL2uwfnGU8FccwLMgPNQ?si=d3e7e59916344350'
+                // // Internet Friends
+                // songLink: 'https://open.spotify.com/track/5qFL2uwfnGU8FccwLMgPNQ?si=d3e7e59916344350'
+
+                songLink: 'https://www.youtube.com/watch?v=luJJBeCFeM0'
             },
             {
                 subGenreName: 'Big Room House',
-                // Rave After Rave
-                songLink: 'https://open.spotify.com/track/2VgAzCIMZXCmbnxI5AbCsi?si=d3d04c0f0e0e418e'
+                // // Rave After Rave
+                // songLink: 'https://open.spotify.com/track/2VgAzCIMZXCmbnxI5AbCsi?si=d3d04c0f0e0e418e'
+
+                songLink: 'https://www.youtube.com/watch?v=GxH9PC5FJdw'
             },
             {
                 subGenreName: 'Melbourne Bounce',
@@ -81,8 +87,11 @@ var genreList = [
         subGenres: [
             {
                 subGenreName: 'Future Bass',
-                // You and Me
-                songLink: 'https://open.spotify.com/track/1snNAXmmPXCn0dkF9DaPWw?si=c6ab176a894a4897'
+                // // You and Me
+                // songLink: 'https://open.spotify.com/track/1snNAXmmPXCn0dkF9DaPWw?si=c6ab176a894a4897'
+                
+                // YOUTUBE: Tennis Court
+                songLink: 'https://www.youtube.com/watch?v=8ATu1BiOPZA'
             }
         ]
     },

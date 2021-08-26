@@ -90,6 +90,11 @@ var genreList = [
                 songLink: 'https://www.youtube.com/watch?v=foPK_K0vxo4'
             },
             {
+                subGenreName: 'Uplifting Trance',
+                // Walhalla
+                songLink: 'https://www.youtube.com/watch?v=AMldMBmmFPI'
+            },
+            {
                 subGenreName: 'Progressive Trance',
                 // // Sun & Moon
                 // songLink: 'https://open.spotify.com/track/4rfhAoZjGwraqwX1w47uij?si=ac34f7ed9f52405e'

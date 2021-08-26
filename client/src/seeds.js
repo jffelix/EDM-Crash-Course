@@ -38,6 +38,11 @@ var genreList = [
                 songLink: 'https://www.youtube.com/watch?v=li6_41Fusbw'
             },
             {
+                subGenreName: 'French House',
+                // One More Time
+                songLink: 'https://www.youtube.com/watch?v=A2VpR8HahKc'
+            },
+            {
                 subGenreName: 'Future House',
                 // // Gecko (Overdrive)
                 // songLink: 'https://open.spotify.com/track/50PPSxXsLw8n4CQrWPopIW?si=d7348d2dd7a84c7c'

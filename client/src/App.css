@@ -1,6 +1,6 @@
 body {
     /* color: black; */
-    background-color: rgb(58, 247, 105);
+    background-color: rgb(20, 231, 73);
     background-image: url("https://wallpapercave.com/wp/wp2343900.png");
     padding: 100px 0;
     /* background-size: contain; */
@@ -71,7 +71,7 @@ body {
 
 .houseMain {
     padding: 20px;
-    margin: 40px 300px;
+    margin: 40px 320px;
     text-align: center;
     border-style: solid;
     color: rgb(214, 218, 221);
@@ -81,7 +81,7 @@ body {
 
 .tranceMain {
     padding: 20px;
-    margin: 40px 280px;
+    margin: 40px 300px;
     text-align: center;
     border-style: none;
     color: rgb(251, 253, 253);
@@ -103,7 +103,7 @@ body {
     margin: 40px 300px;
     text-align: center;
     border-style: solid;
-    background-color: rgb(161, 15, 10);
+    background-color: rgb(180, 3, 86);
     border-width: 1em; 
 }
 

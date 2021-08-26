@@ -26,7 +26,7 @@ body {
 
 .title {
     /* font-family: Arial, sans-serif; */
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Orbitron', sans-serif;;
 }
 
 .subTitle {
@@ -34,6 +34,30 @@ body {
     background-color: black;
     color: white;
     padding: 5px;
+}
+
+.listBorder {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: thick;
+    /* font-family: Verdana, sans-serif; */
+    font-family: 'Orbitron', sans-serif;;
+    border-width: 2em;
+    border-bottom: solid;
+}
+
+.genreOption {
+    font-size: 16px;
+    padding: 4px;
+    font-family: Verdana, sans-serif;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 100;
+}
+
+.subGenre {
+    font-size: 30px;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .main {
@@ -144,30 +168,6 @@ body {
     color: rgb(5, 5, 5);
     background-color: rgb(133, 131, 131);
     border-width: 2ex 1.25ex 0.5ex;
-}
-
-.listBorder {
-    padding: 40px;
-    font-size: 20px;
-    font-weight: thick;
-    /* font-family: Verdana, sans-serif; */
-    font-family: 'Russo One', sans-serif;
-    border-width: 2em;
-    border-bottom: solid;
-}
-
-.genreOption {
-    font-size: 16px;
-    padding: 4px;
-    font-family: Verdana, sans-serif;
-    border-radius: 10px;
-    border-style: none;
-    font-weight: 100;
-}
-
-.subGenre {
-    font-size: 30px;
-    font-family: "Gill Sans", sans-serif;
 }
 
 .playSong {

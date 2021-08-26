@@ -7,6 +7,8 @@ import '../App.css';
 //     </div>
 // )
 
+// need to make <option> tag have an onClick handler instead of <select> tag
+
 class GenreListItem extends React.Component {
 
     constructor(props) {

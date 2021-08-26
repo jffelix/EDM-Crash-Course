@@ -83,6 +83,11 @@ var genreList = [
         genreColor: 'tranceMain',
         subGenres: [
             {
+                subGenreName: 'Trance',
+                // Sandstorm
+                songLink: 'https://www.youtube.com/watch?v=gFsdPrBLHO0'
+            },
+            {
                 subGenreName: 'Vocal Trance',
                 // // Quiet Storm
                 // songLink: 'https://open.spotify.com/track/3ycBoUppEy6mvItpEv9DU7?si=1931e08d906f4b59'

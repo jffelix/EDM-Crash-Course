@@ -3,6 +3,7 @@ const genreList = require('../../client/src/seeds.js');
 // console.log('genreList: ', genreList);
 
 const genreItemSchema = new mongoose.Schema({
+    // todo: add "unique" as a property
     genreName: {type: String},
     hasSubGenres: {type: Boolean},
     genreColor: {type: String},

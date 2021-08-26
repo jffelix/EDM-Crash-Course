@@ -45,6 +45,11 @@ var genreList = [
                 songLink: 'https://www.youtube.com/watch?v=Ds6mXHy3EK0'
             },
             {
+                subGenreName: 'Tropical House',
+                // I Got U
+                songLink: 'https://www.youtube.com/watch?v=h8Jh6M1s9PQ'
+            },
+            {
                 subGenreName: 'Bass House',
                 // // HOT DRUM
                 // songLink: 'https://open.spotify.com/track/0gcPFlSLjkVqz84RcDhyJk?si=83bb98796c934103'
@@ -231,7 +236,13 @@ var genreList = [
                 // songLink: 'https://open.spotify.com/track/5A75dQjETCrhoaXRjRndC2?si=d8bdbb2a5b6549c2'
 
                 songLink: 'https://www.youtube.com/watch?v=YZjdtGBIA6Q'
-            }
+            },
+            {
+                subGenreName: 'Hard House',
+                // Krakatoa
+
+                songLink: 'https://www.youtube.com/watch?v=OinPpGBPaOw'
+            },
         ]
     },
     {

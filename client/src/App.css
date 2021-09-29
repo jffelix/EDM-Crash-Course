@@ -177,9 +177,16 @@ body {
     font-weight: bold;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1200px) {
 
-    .main {
+    .main, .houseMain, .tranceMain, .futureBassMain, .trapMain, .moombahtonMain, .dubstepMain, .drumAndBassMain, .hardDanceMain, .synthwaveMain, .technoMain {
         margin: 20px 200px;
+    }
+}
+
+@media all and (max-width: 800px) {
+
+    .main, .houseMain, .tranceMain, .futureBassMain, .trapMain, .moombahtonMain, .dubstepMain, .drumAndBassMain, .hardDanceMain, .synthwaveMain, .technoMain {
+        margin: 10px 100px;
     }
 }

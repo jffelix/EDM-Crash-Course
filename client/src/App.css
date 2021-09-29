@@ -176,3 +176,10 @@ body {
     border-radius: 30px;
     font-weight: bold;
 }
+
+@media all and (max-width: 1024px) {
+
+    .main {
+        margin: 20px 200px;
+    }
+}

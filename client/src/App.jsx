@@ -99,8 +99,7 @@ class App extends React.Component {
     clickGenre(event) {
         // console.log('clicked genre: ', event.target.value);
         var genreParsed = JSON.parse(event.target.value);
-        // console.log('genreParsed: ', genreParsed);
-
+        
         // if switching to another genre
         if (this.state.selectedGenre !== genreParsed) {
             this.setState({

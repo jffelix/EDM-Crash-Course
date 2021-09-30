@@ -59,7 +59,7 @@ class App extends React.Component {
 
         // // CODE TO REDIRECT TO SPOTIFY LOGIN
 
-        // const client_id = '31f7861b80164367b314769d0df02af0';
+        // const client_id = 'reference config.js here';
         // const redirect_uri = 'http://localhost:4001/genres';
 
         // var scopes = ['streaming'];
@@ -99,7 +99,7 @@ class App extends React.Component {
     clickGenre(event) {
         // console.log('clicked genre: ', event.target.value);
         var genreParsed = JSON.parse(event.target.value);
-        
+
         // if switching to another genre
         if (this.state.selectedGenre !== genreParsed) {
             this.setState({

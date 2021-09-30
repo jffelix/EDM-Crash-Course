@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 const axios = require('axios');
 
 const SpotifyWebApi = require('spotify-web-api-node');
+
+// NEED TO CREATE config.js FILE TO HIDE SPOTIFY CODES
+  // USE gitignore TO HIDE FROM USERS IN GITHUB
+
 // const querystring = require('querystring');
 
 // const scopes = [
@@ -44,8 +48,8 @@ const controllers = {
         //     // req.query.code permits to retreive token 
         //     code: req.query.code,
         //     redirect_uri: 'http://localhost:4001/genres',
-        //     client_id: '31f7861b80164367b314769d0df02af0',
-        //     client_secret: 'fd64c363f32f4c64b557c8193106ad4e'
+        //     client_id: 'reference config.js here',
+        //     client_secret: 'reference config.js here'
         // };
 
         // const headers = {

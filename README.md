@@ -6,6 +6,8 @@ No fear! I am here to help with this simple application that has already sorted 
 
 ## How to run the application
 
-- Open two split Terminals in VS Code.
+- Fork this repo and git clone the repo into your personal computer
+- Open VS Code with your git cloned file.
+- Open two split Terminals inside your VS Code.
 - Run "npm start" and "npm run build" in seperate Terminals
 - Open a Google Chrome browser and use localhost:4001
